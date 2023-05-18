@@ -1,0 +1,52 @@
+/* all files */
+* {
+    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* links */
+
+a:hover {
+    background-color: #FF1493;
+    color: black;
+    font-weight: bold;
+}
+
+/* recipes/... */
+
+h1,
+h2 {
+    text-transform: capitalize;
+    color: black;
+    background-color: #30C5FF;
+}
+
+img {
+    border-radius: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-text {
+    background-color: #FFFF00;
+}
+
+/* index.html */
+.center-text {
+    text-align: center;
+}
+
+.endless-text {
+    font-size: 24px;
+    color: gray;
+    text-transform: lowercase;
+    font-style: italic;
+}

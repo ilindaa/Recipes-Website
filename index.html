@@ -1,3 +1,7 @@
+<!-- 
+Inspirations: 
+http://onelongscream.com/ (endless "AH" text)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +9,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes Homepage</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        const test = ["FRIED RICE 🍚", "BENTO 🍱", "ICE CREAM 🍨", "YUMMY 😋", "HUNGRY 🤤", "FOOD 🍴"];
+
+        function addToText() {
+            let longText = document.querySelector('.endless-text');
+            let random = Math.floor(Math.random() * 6); // 6 default texts; 0 to 5
+            longText.textContent = longText.textContent + test[random] + '\n';
+        }
+
+        setInterval(addToText, 541);
+    </script>
 </head>
 <body>
-    <h1>YouTuber Recipes</h1>
+    <h1 class="center-text">✨ YouTuber Recipes ✨</h1>
+    <br><br>
 
-    <ul>
-        <li><a href="./recipes/egg-fried-rice.html">Uncle Roger's Egg Fried Rice</a></li>
-        <li><a href="./recipes/rilakkuma-bento.html">ochikeron's Rilakkuma Bento</a></li>
-        <li><a href="./recipes/mint-choco-chip-ice.html">Peaceful Cuisine's Mint Chocolate Chip Ice Cream</a></li>
-    </ul>
+    <div class="center-text">
+        <ul style="background-color: #FFFF00; display: inline-block; text-align: left;">
+            <li><a href="./recipes/egg-fried-rice.html">Uncle Roger's Egg Fried Rice</a> 🍚</li>
+            <li><a href="./recipes/rilakkuma-bento.html">ochikeron's Rilakkuma Bento</a> 🍱</li>
+            <li><a href="./recipes/mint-choco-chip-ice.html">Peaceful Cuisine's Mint Chocolate Chip Ice Cream</a> 🍨</li>
+        </ul>
+    </div>
+
+    <br><br><br>
+    <text class="endless-text"></text>
 
 </body>
 </html>
