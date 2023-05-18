@@ -8,19 +8,15 @@ http://onelongscream.com/ (endless "AH" text)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes Homepage</title>
+    <title>Recipes Home Page</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
     <link href="style.css" rel="stylesheet">
+
+    <script src="script.js"></script>
     <script>
-        const test = ["FRIED RICE 🍚", "BENTO 🍱", "ICE CREAM 🍨", "YUMMY 😋", "HUNGRY 🤤", "FOOD 🍴"];
-
-        function addToText() {
-            let longText = document.querySelector('.endless-text');
-            let random = Math.floor(Math.random() * 6); // 6 default texts; 0 to 5
-            longText.textContent = longText.textContent + test[random] + '\n';
-        }
-
-        setInterval(addToText, 541);
+        var id = setInterval(addToText, 541);
     </script>
+
 </head>
 <body>
     <h1 class="center-text">✨ YouTuber Recipes ✨</h1>
